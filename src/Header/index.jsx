@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
+
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
@@ -125,23 +125,44 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Home
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              About
+            </Button>
+            <LightTooltip title={<Typography>Hello</Typography>}>
               <Button
-                key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                Academics
               </Button>
-            ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <LightTooltip title={<Typography>Hello</Typography>}>
-              <IconButton sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
             </LightTooltip>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Messages
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Gallery
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Contact Us
+            </Button>
           </Box>
         </Toolbar>
       </Container>

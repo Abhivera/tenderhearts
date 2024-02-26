@@ -14,25 +14,25 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 767, min: 464 },
-    items: 2,
+    items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
 };
 const sliderImageUrl = [
   
-  //Second image url
+  //first image url
   {
-    url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-for-kids-2020-sonic-the-hedgehog-1571173983.jpg?crop=0.9871668311944719xw:1xh;center,top&resize=480:*",
+    url: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1000&h=460&dpr=2",
   },
-  //Third image url
+  //second image url
   {
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS82ET2bq9oTNwPOL8gqyoLoLfeqJJJWJmKQ&usqp=CAU",
+    url: "https://images.pexels.com/photos/8923258/pexels-photo-8923258.jpeg?auto=compress&cs=tinysrgb&w=1000&h=460&dpr=2",
   },
 
-  //Fourth image url
+  //third image url
 
   {
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdvuww0JDC7nFRxiFL6yFiAxRJgM-1tvJTxA&usqp=CAU",
+    url: "https://images.pexels.com/photos/5428014/pexels-photo-5428014.jpeg?auto=compress&cs=tinysrgb&w=1000&h=460&dpr=2",
   },
 ];
 const Slider = () => {
